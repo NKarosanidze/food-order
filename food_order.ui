@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="styleSheet">
+   <string notr="true">
+      QWidget {
+        background-color: #e6f2ff;
+      }
+      QLabel {
+        color: #000000;
+        font-size: 14px;
+        font-weight: bold;
+      }
+      QLineEdit {
+        border: 2px solid #4682b4
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 13px;
+        color: #000000;
+        background-color: #000000;
+      }
+      QlineEdit:placeholder {
+        color: #000000
+      }
+
+      QCheckbox {
+        font-size: 14px;
+        margin: 5px;
+        color: #000000;
+        font-weight: bold;
+      }
+      QPushButton {
+        background-color: #000000;
+        color: #2e7d32;
+        border: 2px solid #2e7d32;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: bold;
+      }
+      QPushButton:hover {
+        background-color: #e8f5e9;
+      }
+   </string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="address_label">
+     <property name="text">
+      <string>ჩაწერე მისამართი:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="address_input"/>
+   </item>
+   <item>
+    <widget class="QLabel" name="phone_label">
+     <property name="text">
+      <string>შეიყვანე ტელეფონის ნომერი:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="phone_input">
+     <property name="placeholderText">
+      <string>მაგ: 555123456</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="food_label">
+     <property name="text">
+      <string>აირჩიე საკვები:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="food_checkbox_layout"/>
+   </item>
+   <item>
+    <widget class="QPushButton" name="order_button">
+     <property name="text">
+      <string>შეუკვეთე</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
